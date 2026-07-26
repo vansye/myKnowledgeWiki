@@ -20,3 +20,4 @@ Vue 组件逻辑的两种组织方式：选项式 API（Options API）和组合�
 - **Composition API（组合式）**：Vue 3 引入，通过 `setup()` 或 `<script setup>` 使用。代码按功能聚合（如全部搜索逻辑写在一起），逻辑复用更优雅
 - 推荐使用 **Composition API + `<script setup lang="ts">`**，TypeScript 类型推导更好
 - 两者可混用，但同一组件内不建议混用
+- 在 [[Vue工程化]] 项目中，推荐统一使用 Composition API + `<script setup>`

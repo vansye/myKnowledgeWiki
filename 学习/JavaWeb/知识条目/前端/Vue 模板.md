@@ -23,3 +23,4 @@ Vue 模板语法是一种基于 HTML 的声明式绑定语法，用于将数据�
 - **v-model**：表单双向绑定[reference:14]
 - **表达式限制**：模板中仅支持单个 JavaScript 表达式，不支持语句[reference:15][reference:16]
 - **动态参数**：`v-bind:[attrName]` 可动态绑定属性名[reference:17]
+- 模板语法背后的数据驱动机制见 [[响应式对象]]，配合 [[Element]] 组件库搭建完整页面

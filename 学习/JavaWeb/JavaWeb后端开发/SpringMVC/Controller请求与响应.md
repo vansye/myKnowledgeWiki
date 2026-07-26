@@ -18,7 +18,7 @@
 
 Controller（控制器）是 SpringMVC 中负责**接收 HTTP 请求、调用业务逻辑、返回响应数据**的组件。
 
-它是 Web 应用的入口层，位于请求处理链路的中间位置：
+它是 Web 应用的入口层，位于请求处理链路的中间位置（[[Interceptor拦截器技术]] 之后、Service 之前）。接口设计遵循 [[Restful规范]]。
 
 ```
 浏览器 → 过滤器 → 拦截器 → Controller → Service → Dao → MySQL

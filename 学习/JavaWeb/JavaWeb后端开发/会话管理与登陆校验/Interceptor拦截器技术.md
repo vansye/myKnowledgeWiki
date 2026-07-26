@@ -17,6 +17,8 @@
 ## 什么是 Interceptor
 
 > **Interceptor（拦截器）是 Spring MVC 框架提供的组件，用于在请求到达 Controller 之前、之后或完成渲染后，对请求进行拦截处理。**
+> 
+> 与 [[Filter过滤器技术]] 同属请求拦截体系，但 Interceptor 更靠近 Controller 层。
 
 它与 Filter 类似，但属于 **更上层、更贴近 Spring 业务逻辑**的拦截机制。Filter 是 Jakarta Servlet 规范的一部分，而 Interceptor 是 **Spring 框架特有的**。
 

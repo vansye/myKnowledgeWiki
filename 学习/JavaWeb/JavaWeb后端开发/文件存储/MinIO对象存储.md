@@ -3,7 +3,7 @@
 ## 目录
 
 - [什么是 MinIO](#什么是-minio)
-- [MinIO vs 阿里云 OSS](#minio-vs-阿里云-oss)
+- [MinIO vs 阿里云 OSS](#minio-vs-阿里云-oss)（对比见 [[阿里云OSS]]）
 - [为什么选择 MinIO](#为什么选择-minio)
 - [MinIO 的核心概念](#minio-的核心概念)
 - [MinIO 安装与部署](#minio-安装与部署)

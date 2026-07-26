@@ -17,6 +17,8 @@
 ## 什么是 Filter
 
 > **Filter（过滤器）是 Java Servlet 规范中的核心组件之一，用于在请求到达 Servlet 之前或响应返回浏览器之前，对请求/响应进行预处理或后处理。**
+> 
+> 详细版见 [[Java Web 后端开发知识总结]]，速查版见 [[Filter过滤器]]。
 
 它是一段可以**插入到请求处理流程中的代码**，位于 Web 服务器和目标资源（Servlet / JSP / 静态资源）之间。
 
@@ -571,7 +573,7 @@ public class EncodingFilter implements Filter {
 
 ## Filter 与 Interceptor 的区别
 
-> Spring 项目中常听到 **Interceptor（拦截器）**，它和 Filter 功能类似，但属于不同的技术体系。
+> Spring 项目中常听到 **Interceptor（拦截器）**，它和 Filter 功能类似，但属于不同的技术体系。详见 [[Interceptor拦截器技术]]。
 
 | 对比项 | Filter（过滤器） | Interceptor（拦截器） |
 |--------|-----------------|---------------------|

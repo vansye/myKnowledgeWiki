@@ -20,3 +20,4 @@ MyBatis 是 Java 中常用的持久层框架，用来简化 SQL 与 Java 对象�
 - 重点是 SQL 映射，不是完全隐藏 SQL
 - 常见对象有 Mapper、SqlSession、ResultMap
 - 适合处理复杂查询和精细化数据库操作
+- 详细讲解见 [[MyBatis持久层框架]]（含 XML 映射、动态 SQL、缓存机制）
