@@ -24,4 +24,8 @@ goal: Claude Code 技能 — 审查变更中的复用、简化、效率和清理
 - **效率**（Efficiency）：是否有冗余计算或低效算法
 - **Altitude cleanups**：格式、注释一致性等细节
 
+## 技术关联
+
+与 [[LoopEngineer]] 互补——GSD 修复已有变更中的问题，LoopEngineer 控制变更本身的质量。两者都是 Claude Code Skill。
+
 <!-- KB:ANNOTATIONS -->

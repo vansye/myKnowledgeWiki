@@ -85,4 +85,6 @@ KV Cache 是典型的**以显存换时间**的策略，其内存占用非常惊�
 | **本质**        | 空间（显存）换时间（算力）的经典工程实践。                         |
 | **最怕什么**      | 超长上下文 + 超大并发（显存爆炸）。                           |
 | **目前最优解**     | GQA 架构 + vLLM（PagedAttention）+ FP8/INT4 量化缓存。 |
+
+> 个人实践见 [[PromptOptimizer]]（popt HTTP 代理，自动优化 KV Cache 命中）。
 | **与 RAG 的关系** | RAG 的长 Prompt 极度依赖高效的 KV Cache，否则无法落地。        |
