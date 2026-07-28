@@ -1,14 +1,10 @@
 ---
 type: knowledge
 title: Vue.js 前端框架
-created: 2026-07-24
-updated: 2026-07-24
-tags:
-  - Vue
-  - 前端框架
-  - JavaScript
-  - 响应式
-source: 无
+created: 2026-07-28
+updated: 2026-07-28
+tags: [Vue, 前端框架, JavaScript, 响应式]
+source: Tlias 管理系统前端
 conclusion: Vue 是一套用于构建用户界面的渐进式 JavaScript 框架，核心特点是响应式数据和组件化开发。
 ---
 

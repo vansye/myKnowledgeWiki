@@ -26,3 +26,5 @@ Element 是一套为开发者、设计师和产品经理准备的基于 Vue 的�
 - **选择建议**：Vue 2 项目用 Element UI，Vue 3 项目用 Element Plus[reference:16][reference:17]
 - **安装方式**：`npm install element-ui` 或 `npm install element-plus`[reference:18][reference:19]
 - 在 [[Vue工程化]] 项目中，配合 Vue Router 和 Pinia 搭建完整的中后台应用
+
+本项目中使用 **Element Plus**，配合 `<script setup>` 语法和 Composition API，实现高效开发。完整 UI 组件用法见 [[Element Plus 使用指南]]（Web前端设计/Element-Plus.md）。

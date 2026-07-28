@@ -8,19 +8,17 @@ subject: JavaWeb
 ---
 
 > Vue 3 生态的标准工程化方案：Vite + Vue Router + Pinia + 组件化，涵盖项目结构、路由、状态管理、前后端交互、构建部署等一整套开发流程。
->
-> 前置知识：[[Vue]]（框架基础）、[[Vue 模板]]（模板语法）、[[API风格]]（Options vs Composition）、[[响应式对象]]（reactive / ref）
 
 ## 目录
 
-- [1. 脚手架：Vite](#1-脚手架vite)
+- [1. 脚手架：Vite](#1-脚手架-vite)
 - [2. 组件化开发](#2-组件化开发)
-- [3. 路由：Vue Router](#3-路由vue-router)
-- [4. 状态管理：Pinia](#4-状态管理pinia)
+- [3. 路由：Vue Router](#3-路由-vue-router)
+- [4. 状态管理：Pinia](#4-状态管理-pinia)
 - [5. 前后端交互](#5-前后端交互)
 - [6. 环境变量](#6-环境变量)
 - [7. 构建与部署](#7-构建与部署)
-- [小结](#小结)
+- [小结](小结)
 
 ---
 
@@ -28,7 +26,7 @@ subject: JavaWeb
 
 Vite 是 Vue 官方推荐的构建工具，替代了 Vue CLI。它基于原生 ES Module，开发时秒级启动，生产构建用 Rollup 打包。
 
-**创建项目：**
+**创建项目**：
 
 ```bash
 npm create vue@latest          # 官方脚手架，交互式选择
@@ -36,7 +34,7 @@ npm create vue@latest          # 官方脚手架，交互式选择
 npm create vite@latest my-app -- --template vue
 ```
 
-**项目目录结构（标准 Vue 3 项目）：**
+**项目目录结构（标准 Vue 3 项目）**：
 
 ```
 my-vue-app/
@@ -60,7 +58,7 @@ my-vue-app/
 
 ## 2. 组件化开发
 
-**单文件组件（.vue）：**
+**单文件组件（.vue）**：
 
 每个 `.vue` 文件包含三部分：
 
@@ -82,7 +80,7 @@ button { color: blue; }
 </style>
 ```
 
-**组件通信：**
+**组件通信**：
 
 | 方式 | 方向 | 场景 |
 |------|------|------|
@@ -96,7 +94,7 @@ button { color: blue; }
 
 Vue Router 是 Vue 官方路由库，实现单页面应用（SPA）的页面切换。URL 变化时不刷新整个页面，只替换对应的组件。
 
-**基本配置：**
+**基本配置**：
 
 ```javascript
 // src/router/index.js
@@ -117,7 +115,7 @@ const router = createRouter({
 export default router
 ```
 
-**路由导航：**
+**路由导航**：
 
 ```vue
 <!-- 声明式 -->
@@ -139,7 +137,7 @@ router.push({ name: 'user', params: { id: 1 } })
 
 Pinia 是 Vue 官方状态管理库（替代 Vuex），用于管理跨组件共享的数据。比 Vuex 更简洁、TypeScript 支持更好。
 
-**基本使用：**
+**基本使用**：
 
 ```javascript
 // src/stores/counter.js
@@ -167,8 +165,8 @@ export const useCounterStore = defineStore('counter', () => {
 <script setup>
 import { useCounterStore } from '@/stores/counter'
 const store = useCounterStore()
-// store.count      — 直接读取
-// store.increment() — 调用方法（修改状态）
+// store.count      直接读取
+// store.increment() 调用方法（修改状态）
 </script>
 ```
 
@@ -202,7 +200,7 @@ request.interceptors.response.use(
 export default request
 ```
 
-后端对应的接口规范见 [[Controller请求与响应]]，RESTful 设计见 [[Restful规范]]。
+后端的接口规范见 [[API接口封装]]，RESTful 设计见 [[Restful规范]]。
 
 ## 6. 环境变量
 
@@ -237,3 +235,24 @@ npm run preview   # 本地预览生产构建
 ## 小结
 
 Vue 工程化的核心是**脚手架（Vite）+ 路由（Vue Router）+ 状态管理（Pinia）+ 组件化**四件套。掌握了项目结构、组件通信、路由配置和接口封装，就能搭建标准化的 Vue 3 前端项目，与后端 API 对接形成完整的前后端分离应用。
+
+具体技术的深入理解见：
+
+### 知识条目卡片（简洁概念）
+- [[Vue3应用入口]] (main.js)
+- [[App.vue根组件]] (根容器设计)
+- [[Layout.vue页面布局]] (布局组件)
+- [[script setup语法]] (组件语法)
+- [[Pinia状态管理]] (状态管理)
+- [[Vue Router路由配置]] (路由配置)
+- [[API接口封装]] (前后端交互)
+
+### 详细学习笔记（深入详解）
+- [[Vue3应用入口详细笔记]] (main.js 完整流程)
+- [[App.vue根组件详细笔记]] (根组件原理)
+- [[Layout.vue页面布局详细笔记]] (布局实现细节)
+- [[script setup语法详细笔记]] (语法完整详解)
+- [[Pinia状态管理详细笔记]] (状态管理完整实现)
+- [[Vue Router路由配置详细笔记]] (路由配置完整方案)
+- [[Vue Router路由守卫详细笔记]] (权限守卫完整实现)
+- [[API接口封装详细笔记]] (API 封装完整方案)
