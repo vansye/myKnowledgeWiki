@@ -20,4 +20,4 @@ Filter 是 Java Web 中对请求和响应进行统一处理的组件，常见于
 - 可以拦截一批请求，不是只处理单个 Servlet
 - 常用于统一前置处理和后置处理
 - 需要在 web.xml 或注解中配置映射关系
-- 详细讲解见 [[Filter过滤器技术]]（含登录校验代码示例、FilterChain、Filter 与 Interceptor 对比）
+- 详细讲解见 Filter过滤器技术（含登录校验代码示例、FilterChain、Filter 与 Interceptor 对比）

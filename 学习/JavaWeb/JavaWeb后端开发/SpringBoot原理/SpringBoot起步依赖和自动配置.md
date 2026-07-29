@@ -372,7 +372,7 @@ public SqlSessionFactory sqlSessionFactory(...) { ... }
    `META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports` 文件
 4. 拿到**全量**自动配置类名单
 5. 逐个检查配置类上的 `@ConditionalOnXxx` 条件，**过滤掉不满足条件的**
-6. 满足条件的配置类生效，其中的 `@Bean` 方法执行，Bean 注册进 [[IOC与DI依赖注入\|IOC 容器]]
+6. 满足条件的配置类生效，其中的 `@Bean` 方法执行，Bean 注册进 [IOC 容器
 7. 我们就可以直接 `@Autowired` 使用了
 
 一句话版本：

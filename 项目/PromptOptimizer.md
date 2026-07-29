@@ -23,6 +23,6 @@ AI 框架（Claude Code、OpenAI SDK、Anthropic SDK）和模型 API 之间请�
 
 ## 技术关联
 
-与 [[Qwen_RAG]] 同属 AI 工具链——popt 优化 AI API 的 token 消耗，Qwen RAG 则是把私人文档喂给 AI。两者配合使用效果最佳。
+与 Qwen_RAG 同属 AI 工具链——popt 优化 AI API 的 token 消耗，Qwen RAG 则是把私人文档喂给 AI。两者配合使用效果最佳。
 
 <!-- KB:ANNOTATIONS -->

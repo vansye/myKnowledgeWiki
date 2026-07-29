@@ -30,6 +30,6 @@ AI 改代码频繁翻车：一次改太多找不到 bug、改了"看起来没问
 
 ## 技术关联
 
-与 [[GSD_Skill]]（代码审查修复）和 [[PromptOptimizer]]（popt / KV Cache 优化）同属 Claude Code 生态，一个管流程闭环，一个管 token 节省。
+与 GSD_Skill（代码审查修复）和 PromptOptimizer（popt / KV Cache 优化）同属 Claude Code 生态，一个管流程闭环，一个管 token 节省。
 
 <!-- KB:ANNOTATIONS -->

@@ -543,23 +543,23 @@ onMounted(() => loadData())
 | **必须引入 CSS** | `import 'element-plus/dist/index.css'`，忘了就没样式 |
 | **重点组件** | Button(按钮)、Table(表格)、Form(表单)、Dialog(弹窗)、Pagination(分页)、Select(下拉) |
 
-从零搭建 Vue 项目的过程见 [[Vue工程化]]。详细技术说明见：
+从零搭建 Vue 项目的过程见 Vue工程化。详细技术说明见：
 
 ### 知识条目卡片（简洁概念）
-- [[Vue3应用入口]] (main.js 入口)
-- [[App.vue根组件]] (根容器设计)
-- [[学习/JavaWeb/知识条目/前端/Layout.vue页面布局]] (布局组件)
-- [[学习/JavaWeb/知识条目/前端/script setup语法]] (组件语法)
-- [[Pinia状态管理]] (状态管理)
-- [[Vue Router路由配置]] (路由配置)
-- [[API接口封装]] (前后端交互)
+- 学习/JavaWeb/知识条目/前端/Vue3应用入口 (main.js 入口)
+- App.vue根组件 (根容器设计)
+- 学习/JavaWeb/知识条目/前端/Layout.vue页面布局 (布局组件)
+- 学习/JavaWeb/知识条目/前端/script setup语法 (组件语法)
+- Pinia状态管理 (状态管理)
+- Vue Router路由配置 (路由配置)
+- API接口封装 (前后端交互)
 
 ### 详细学习笔记（深入详解）
-- [[Vue3应用入口详细笔记]] (main.js 完整流程)
-- [[App.vue根组件详细笔记]] (根组件原理)
-- [[学习/JavaWeb/Web前端设计/Layout.vue页面布局]] (布局实现细节)
-- [[学习/JavaWeb/Web前端设计/script setup语法]] (语法完整详解)
-- [[Pinia状态管理详细笔记]] (状态管理完整实现)
-- [[Vue Router路由配置详细笔记]] (路由配置完整方案)
-- [[学习/JavaWeb/Web前端设计/Vue Router路由守卫]] (权限守卫完整实现)
-- [[API接口封装详细笔记]] (API 封装完整方案)
+- 学习/JavaWeb/Web前端设计/Vue3应用入口 (main.js 完整流程)
+- App.vue根组件详细笔记 (根组件原理)
+- 学习/JavaWeb/Web前端设计/Layout.vue页面布局 (布局实现细节)
+- 学习/JavaWeb/Web前端设计/script setup语法 (语法完整详解)
+- Pinia状态管理详细笔记 (状态管理完整实现)
+- Vue Router路由配置详细笔记 (路由配置完整方案)
+- 学习/JavaWeb/Web前端设计/Vue Router路由守卫 (权限守卫完整实现)
+- API接口封装详细笔记 (API 封装完整方案)

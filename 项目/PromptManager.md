@@ -29,6 +29,6 @@ React 18 + Vite 5 + TypeScript 5 + Dexie (IndexedDB ORM)
 
 ## 技术关联
 
-使用的技术栈与 [[Vue工程化]]（Vite + 组件化）和 [[Qwen_RAG]]（Streamlit Web UI）形成对照——前端框架各有侧重，React 生态 vs Vue 生态。
+使用的技术栈与 Vue工程化（Vite + 组件化）和 Qwen_RAG（Streamlit Web UI）形成对照——前端框架各有侧重，React 生态 vs Vue 生态。
 
 <!-- KB:ANNOTATIONS -->

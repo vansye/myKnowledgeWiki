@@ -3,7 +3,7 @@ type: 学习笔记
 title: Java Web 后端开发知识总结
 created: 2026-07-23
 updated: 2026-07-25
-tags: [JavaWeb, 后端, SpringBoot, SpringMVC, MyBatis]
+tags: [JavaWeb, 后端, SpringBoot, SpringMVC, MyBati[[学习/JavaWeb/Web前端设计/MyBatis|MyBatis]]
 subject: JavaWeb
 ---
 
@@ -13,11 +13,11 @@ subject: JavaWeb
 
 - [整体架构：请求处理流程](#整体架构请求处理流程)
 - [JavaWeb 基础](#javaweb-基础)
-- [SpringMVC](#springmvc)
+- [SpringMV[[学习/JavaWeb/Web前端设计/IoC和DI|IO[[学习/JavaWeb/Web前端设计/全局异常处理|全局异常处理]]](#springmvc)
 - [Spring Framework](#spring-framework)
-- [MyBatis](#mybatis)
+- [MyBati[[学习/JavaWeb/Web前端设计/MyBatis|MyBatis]](#mybatis)
 - [解决方案](#解决方案)
-- [SpringBoot](#springboot)
+- [SpringBoo[[学习/JavaWeb/Web前端设计/Filter过滤器技术|过滤[[学习/JavaWeb/Web前端设计/Interceptor拦截器技术|拦截器]]](#springboot)
 - [知识体系全景图](#知识体系全景图)
 - [各技术之间的关系总结](#各技术之间的关系总结)
 - [学习路径建议](#学习路径建议)
@@ -42,8 +42,8 @@ subject: JavaWeb
 
 | 层级 | 职责 | 对应技术 |
 |------|------|----------|
-| **[[Filter过滤器技术\|过滤器]]** | 请求的预处理和响应的后处理，对所有请求生效 | JavaWeb Filter |
-| **[[Interceptor拦截器技术\|拦截器]]** | 请求的细粒度拦截，可针对特定路径 | SpringMVC Interceptor |
+| [[学习/JavaWeb/Web前端设计/Filter过滤器技术|过滤器]] | 请求的预处理和响应的后处理，对所有请求生效 | JavaWeb Filter |
+| [[学习/JavaWeb/Web前端设计/Interceptor拦截器技术|拦截器]] | 请求的细粒度拦截，可针对特定路径 | SpringMVC Interceptor |
 | **Controller** | 接收请求、解析参数、调用业务、返回响应 | SpringMVC |
 | **Service** | 核心业务逻辑处理 | Spring Framework |
 | **Dao** | 数据访问，与数据库交互 | MyBatis |
@@ -53,20 +53,20 @@ subject: JavaWeb
 
 | 技术 | 说明 |
 |------|------|
-| **[[IOC与DI依赖注入\|IOC]]** | 控制反转，对象由 Spring 容器管理 |
+| [[学习/JavaWeb/Web前端设计/IoC和DI|IOC]] | 控制反转，对象由 Spring 容器管理 |
 | **DI** | 依赖注入，容器自动注入依赖对象 |
-| **[[SpringAOP技术\|AOP]]** | 面向切面编程，分离横切关注点 |
-| **[[事务管理\|事务管理]]** | 保证数据库操作的原子性 |
-| **[[全局异常处理\|全局异常处理]]** | 统一处理 Controller 层异常 |
+| [[学习/JavaWeb/Web前端设计/SpringAOP技术|AOP]] | 面向切面编程，分离横切关注点 |
+| [[学习/JavaWeb/Web前端设计/事务管理|事务管理]] | 保证数据库操作的原子性 |
+| [[学习/JavaWeb/Web前端设计/全局异常处理|全局异常处理]] | 统一处理 Controller 层异常 |
 
 **下方的解决方案：**
 
 | 技术 | 说明 |
 |------|------|
-| **[[Cookie 和 Session\|Cookie、Session]]** | 会话管理，跟踪用户状态 |
-| **[[会话技术\|JWT]]** | 无状态认证方案 |
-| **[[阿里云OSS\|阿里云OSS]]** | 对象存储，存放图片/文件 |
-| **[[MyBatis持久层框架\|MyBatis]]** | 持久层框架，ORM 映射 |
+| [[学习/JavaWeb/Web前端设计/Cookie 和 Session|Cookie、Session]] | 会话管理，跟踪用户状态 |
+| [[学习/JavaWeb/Web前端设计/会话技术|JWT]] | 无状态认证方案 |
+| [[学习/JavaWeb/JavaWeb后端开发/文件存储/阿里云OSS|阿里云OS[[学习/JavaWeb/Web前端设计/IoC和DI|IO[[学习/JavaWeb/Web前端设计/全局异常处理|全局异常处理]]]] | 对象存储，存放图片/文件 |
+| [[学习/JavaWeb/Web前端设计/MyBatis持久层框架|MyBatis]] | 持久层框架，ORM 映射 |
 
 ---
 
@@ -365,7 +365,7 @@ public class EmpService {
 
 ### 核心职责
 
-MyBatis 是持久层框架，负责 **Dao 层**与数据库的交互。
+| [[学习/JavaWeb/Web前端设计/MyBatis持久层框架|MyBatis]] | 持久层框架，ORM 映射 |
 
 **核心要点：**
 
@@ -499,8 +499,8 @@ SpringBoot（底层基础）
 | 分类 | 技术 | 说明 |
 |------|------|------|
 | **JavaWeb** | 过滤器 | 请求的通用预处理 |
-| **JavaWeb** | Cookie、Session | 会话管理 |
-| **解决方案** | JWT | 无状态认证 |
+| [[学习/JavaWeb/Web前端设计/Cookie 和 Session|Cookie、Session]] | 会话管理，跟踪用户状态 |
+| [[学习/JavaWeb/Web前端设计/会话技术|JWT]] | 无状态认证方案 |
 | **解决方案** | 阿里云OSS | 文件存储 |
 
 ---
@@ -533,19 +533,19 @@ SpringBoot（底层基础）
 
 | 技术 | 解决的问题 | 在架构中的位置 |
 |------|-----------|---------------|
-| **[[Filter过滤器技术\|过滤器]]** | 请求的通用预处理 | 最外层，所有请求必经 |
-| **[[Interceptor拦截器技术\|拦截器]]** | 请求的细粒度拦截 | Controller 之前 |
-| **[[Controller请求与响应\|Controller]]** | 接收请求、返回响应 | Web 层入口 |
+| [[学习/JavaWeb/JavaWeb后端开发/会话管理与登陆校验/Filter过滤器技术|过滤[[学习/JavaWeb/Web前端设计/Filter过滤器技术|过滤[[学习/JavaWeb/Web前端设计/Interceptor拦截器技术|拦截器]]]]** | 请求的通用预处理 | 最外层，所有请求必经 |
+| [[学习/JavaWeb/Web前端设计/Interceptor拦截器技术|拦截器]] | 请求的细粒度拦截，可针对特定路径 | SpringMVC Interceptor |
+| [[学习/JavaWeb/JavaWeb后端开发/SpringMVC/Controller请求与响应|Controlle[[学习/JavaWeb/Web前端设计/Filter过滤器技术|过滤[[学习/JavaWeb/Web前端设计/Interceptor拦截器技术|拦截器]]]] | 接收请求、返回响应 | Web 层入口 |
 | **Service** | 业务逻辑处理 | 核心业务层 |
 | **Dao/Mapper** | 数据库操作 | 数据访问层 |
-| **[[IOC与DI依赖注入\|IOC/DI]]** | 对象管理和依赖注入 | 贯穿所有层 |
-| **[[SpringAOP技术\|AOP]]** | 横切关注点分离 | 增强 Service 层 |
-| **[[事务管理\|事务管理]]** | 数据一致性保证 | Service 层方法上 |
-| **[[全局异常处理\|全局异常处理]]** | 统一异常响应 | Controller 层之上 |
-| **[[会话技术\|JWT]]** | 无状态认证 | 替代 Session |
-| **[[阿里云OSS\|阿里云 OSS]]** | 文件存储 | 替代本地存储 |
-| **[[MyBatis持久层框架\|MyBatis]]** | ORM 映射 | Dao 层实现 |
-| **[[SpringBoot起步依赖和自动配置\|SpringBoot]]** | 框架整合 | 底层基础 |
+| [[学习/JavaWeb/JavaWeb后端开发/Spring核心/IoC和DI依赖注入|IOC/D[[学习/JavaWeb/Web前端设计/Interceptor拦截器技术|拦截器]]]** | 对象管理和依赖注入 | 贯穿所有层 |
+| [[学习/JavaWeb/JavaWeb后端开发/SpringAOP/SpringAOP技术|AO[[学习/JavaWeb/Web前端设计/SpringAOP技术|AOP]]]** | 横切关注点分离 | 增强 Service 层 |
+| [[学习/JavaWeb/JavaWeb后端开发/Spring核心/事务管理|事务管[[学习/JavaWeb/Web前端设计/Filter过滤器技术|过滤[[学习/JavaWeb/Web前端设计/Interceptor拦截器技术|拦截器]]]]** | 数据一致性保证 | Service 层方法上 |
+| [[学习/JavaWeb/JavaWeb后端开发/SpringMVC/全局异常处理|全局异常处[[学习/JavaWeb/Web前端设计/Filter过滤器技术|过滤[[学习/JavaWeb/Web前端设计/Interceptor拦截器技术|拦截器]]]]** | 统一异常响应 | Controller 层之上 |
+| [[学习/JavaWeb/Web前端设计/会话技术|JWT]] | 无状态认证方案 |
+| [[学习/JavaWeb/JavaWeb后端开发/文件存储/阿里云OSS|阿里云 OS[[学习/JavaWeb/Web前端设计/IoC和DI|IO[[学习/JavaWeb/Web前端设计/全局异常处理|全局异常处理]]]]** | 文件存储 | 替代本地存储 |
+| [[学习/JavaWeb/Web前端设计/MyBatis持久层框架|MyBatis]] | 持久层框架，ORM 映射 |
+| [[学习/JavaWeb/JavaWeb后端开发/SpringBoot原理/SpringBoot起步依赖和自动配置|SpringBoo[[学习/JavaWeb/Web前端设计/Filter过滤器技术|过滤[[学习/JavaWeb/Web前端设计/Interceptor拦截器技术|拦截器]]]]** | 框架整合 | 底层基础 |
 
 ---
 
@@ -584,7 +584,7 @@ SpringBoot（底层基础）
 | **分层架构** | Filter → Interceptor → Controller → Service → Dao → MySQL |
 | **SpringMVC** | 接收请求、响应数据、拦截器、全局异常处理 |
 | **Spring Framework** | IOC/DI（对象管理）、AOP（切面编程）、事务管理 |
-| **MyBatis** | 持久层框架，SQL 映射，动态 SQL |
+| [[学习/JavaWeb/Web前端设计/MyBatis持久层框架|MyBatis]] | 持久层框架，ORM 映射 |
 | **SpringBoot** | 底层基础，自动配置，整合所有框架 |
 | **JavaWeb** | 过滤器、Cookie、Session |
 | **解决方案** | JWT（认证）、阿里云 OSS（文件存储） |

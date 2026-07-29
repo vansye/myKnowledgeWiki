@@ -26,6 +26,6 @@ goal: Claude Code 技能 — 审查变更中的复用、简化、效率和清理
 
 ## 技术关联
 
-与 [[LoopEngineer]] 互补——GSD 修复已有变更中的问题，LoopEngineer 控制变更本身的质量。两者都是 Claude Code Skill。
+与 LoopEngineer 互补——GSD 修复已有变更中的问题，LoopEngineer 控制变更本身的质量。两者都是 Claude Code Skill。
 
 <!-- KB:ANNOTATIONS -->

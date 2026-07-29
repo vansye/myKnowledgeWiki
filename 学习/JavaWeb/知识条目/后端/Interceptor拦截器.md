@@ -20,4 +20,4 @@ Interceptor 是 Spring MVC 中常见的拦截机制，主要在控制器方法�
 - 作用范围通常在 Spring MVC 请求链中
 - 常见方法有 preHandle、postHandle、afterCompletion
 - 适合和 Handler、Controller 配合理解
-- 详细讲解见 [[Interceptor拦截器技术]]（含 token 登录拦截器代码示例、与 Filter 的区别）
+- 详细讲解见 Interceptor拦截器技术（含 token 登录拦截器代码示例、与 Filter 的区别）

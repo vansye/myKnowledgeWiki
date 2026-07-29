@@ -20,7 +20,7 @@
 
 **IOC（Inversion of Control，控制反转）** 是 Spring 框架的核心思想。
 
-它的含义是：**将对象的创建和管理权从程序员手中交给 Spring 容器**。速查版见 [[IoC和DI]]，Beans 概念见 [[Bean]]。
+它的含义是：**将对象的创建和管理权从程序员手中交给 Spring 容器**。速查版见 IoC和DI，Beans 概念见 Bean。
 
 ### 传统方式 vs IOC
 

@@ -5,8 +5,7 @@ created: 2026-07-28
 updated: 2026-07-28
 tags: [Vue, 架构设计, 请求响应, API, Pinia, Vue Router]
 subject: JavaWeb
-description: 系统梳理 Vue3 工程的整体架构设计，以及从用户操作发出请求到收到后端响应的完整数据流。
-> 本文总结基于标准 Vue3 + Vite + Element Plus + Vue Router + Pinia + Axios 工程架构，采用通用化的示例（如用户系统、数据列表），适用于各类 Vue3 前端项目。
+description: 系统梳理 Vue3 工程的整体架构设计，以及从用户操作发出请求到收到后端响应的完整数据流。本文总结基于标准 Vue3 + Vite + Element Plus + Vue Router + Pinia + Axios 工程架构，采用通用化的示例（如用户系统、数据列表），适用于各类 Vue3 前端项目。
 ---
 
 ## 目录
@@ -536,22 +535,22 @@ sequenceDiagram
 
 **步骤详解**：
 
-| 步骤 | 位置/代码 | 动作 |
-|------|-----------|------|
-| 1 | `views/login/Login.vue` | 用户在表单输入用户名/密码，点击登录按钮触发 `handleLogin()` |
-| 2 | `Login.vue` | 调用 `userStore.login(username, password)` |
-| 3 | `stores/user.js` | `login()` action 中调用 `await loginApi.login({username, password})` |
-| 4 | `api/auth.js` | `loginApi.login()` 返回 `http.post('/login', data)` |
-| 5 | `api/http.js` | **请求拦截器**拦截到请求，从 `localStorage` 取 token（登录时无 token，不添加），构造 config |
-| 6 | 浏览器 | 实际发出 HTTP POST 请求：`POST /api/login` (Vite 代理转发到后端) |
-| 7 | 后端 (Spring Boot) | `/api/login` Controller 处理登录，验证凭证，返回 JSON `{code:1, msg:"成功", data:{token, userInfo}}` |
-| 8 | 浏览器 | HTTP 响应到达前端 |
-| 9 | `api/http.js` | **响应拦截器**处理响应：检查 `code === 1`，返回 `data.data` (直接返回业务对象，无需 `.data`) |
-| 10 | `api/auth.js` | `login()` 方法返回业务数据 |
-| 11 | `stores/user.js` | `login()` action 收到数据后：设置 `this.token`, `this.userInfo`, 持久化到 `localStorage` |
-| 12 | `Login.vue` | `try...catch` 块捕获成功，显示成功消息，调用 `router.push('/dashboard')` |
-| 13 | `router/index.js` | 触发路由跳转，`beforeEach` 守卫检查 token 存在，放行 |
-| 14 | `Layout.vue` | Layout 组件挂载，`onMounted` 重新加载部门/分类数据和商品选择器数据（因为 Store 已恢复） |
+| 步骤  | 位置/代码                   | 动作                                                                                     |
+| --- | ----------------------- | -------------------------------------------------------------------------------------- |
+| 1   | `views/login/Login.vue` | 用户在表单输入用户名/密码，点击登录按钮触发 `handleLogin()`                                                 |
+| 2   | `Login.vue`             | 调用 `userStore.login(username, password)`                                               |
+| 3   | `stores/user.js`        | `login()` action 中调用 `await loginApi.login({username, password})`                      |
+| 4   | `api/auth.js`           | `loginApi.login()` 返回 `http.post('/login', data)`                                      |
+| 5   | `api/http.js`           | **请求拦截器**拦截到请求，从 `localStorage` 取 token（登录时无 token，不添加），构造 config                      |
+| 6   | 浏览器                     | 实际发出 HTTP POST 请求：`POST /api/login` (Vite 代理转发到后端)                                     |
+| 7   | 后端 (Spring Boot)        | `/api/login` Controller 处理登录，验证凭证，返回 JSON `{code:1, msg:"成功", data:{token, userInfo}}` |
+| 8   | 浏览器                     | HTTP 响应到达前端                                                                            |
+| 9   | `api/http.js`           | **响应拦截器**处理响应：检查 `code === 1`，返回 `data.data` (直接返回业务对象，无需 `.data`)                     |
+| 10  | `api/auth.js`           | `login()` 方法返回业务数据                                                                     |
+| 11  | `stores/user.js`        | `login()` action 收到数据后：设置 `this.token`, `this.userInfo`, 持久化到 `localStorage`           |
+| 12  | `Login.vue`             | `try...catch` 块捕获成功，显示成功消息，调用 `router.push('/dashboard')`                              |
+| 13  | `router/index.js`       | 触发路由跳转，`beforeEach` 守卫检查 token 存在，放行                                                   |
+| 14  | `Layout.vue`            | Layout 组件挂载，`onMounted` 重新加载部门/分类数据和商品选择器数据（因为 Store 已恢复）                              |
 
 ### 5.2 场景二：查询列表分页数据
 

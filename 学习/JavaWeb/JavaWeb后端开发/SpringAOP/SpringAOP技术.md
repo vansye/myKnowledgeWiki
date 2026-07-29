@@ -22,7 +22,7 @@ AOP（Aspect Oriented Programming，面向切面编程）是一种补充 OOP 的
 
 - 日志记录
 - 权限校验
-- [[事务管理]]（AOP 的典型应用）
+- 事务管理（AOP 的典型应用）
 - 性能统计
 
 这样做的好处是：

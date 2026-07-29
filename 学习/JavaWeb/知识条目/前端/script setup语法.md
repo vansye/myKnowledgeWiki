@@ -3,7 +3,9 @@ type: knowledge
 title: script setup 语法
 created: 2026-07-28
 updated: 2026-07-28
-tags: [Vue3, Composition API, script setup, 前端]
+tags:
+  - Vue3
+  - 前端
 source: Tlias 管理系统前端
 conclusion: <script setup> 是 Vue3 的语法糖，无需 export default，模板中直接使用声明的变量和方法。所有顶层变量自动暴露到模板，无需手动 return，代码更简洁。
 ---

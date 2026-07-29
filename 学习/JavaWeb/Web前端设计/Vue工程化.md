@@ -200,7 +200,7 @@ request.interceptors.response.use(
 export default request
 ```
 
-后端的接口规范见 [[API接口封装]]，RESTful 设计见 [[Restful规范]]。
+后端的接口规范见 API接口封装，RESTful 设计见 Restful规范。
 
 ## 6. 环境变量
 
@@ -239,20 +239,20 @@ Vue 工程化的核心是**脚手架（Vite）+ 路由（Vue Router）+ 状态�
 具体技术的深入理解见：
 
 ### 知识条目卡片（简洁概念）
-- [[Vue3应用入口]] (main.js)
-- [[App.vue根组件]] (根容器设计)
-- [[Layout.vue页面布局]] (布局组件)
-- [[script setup语法]] (组件语法)
-- [[Pinia状态管理]] (状态管理)
-- [[Vue Router路由配置]] (路由配置)
-- [[API接口封装]] (前后端交互)
+- 学习/JavaWeb/知识条目/前端/Vue3应用入口 (main.js)
+- App.vue根组件 (根容器设计)
+- Layout.vue页面布局 (布局组件)
+- script setup语法 (组件语法)
+- Pinia状态管理 (状态管理)
+- Vue Router路由配置 (路由配置)
+- API接口封装 (前后端交互)
 
 ### 详细学习笔记（深入详解）
-- [[Vue3应用入口详细笔记]] (main.js 完整流程)
-- [[App.vue根组件详细笔记]] (根组件原理)
-- [[Layout.vue页面布局详细笔记]] (布局实现细节)
-- [[script setup语法详细笔记]] (语法完整详解)
-- [[Pinia状态管理详细笔记]] (状态管理完整实现)
-- [[Vue Router路由配置详细笔记]] (路由配置完整方案)
-- [[Vue Router路由守卫详细笔记]] (权限守卫完整实现)
-- [[API接口封装详细笔记]] (API 封装完整方案)
+- 学习/JavaWeb/Web前端设计/Vue3应用入口 (main.js 完整流程)
+- App.vue根组件详细笔记 (根组件原理)
+- Layout.vue页面布局详细笔记 (布局实现细节)
+- script setup语法详细笔记 (语法完整详解)
+- Pinia状态管理详细笔记 (状态管理完整实现)
+- Vue Router路由配置详细笔记 (路由配置完整方案)
+- Vue Router路由守卫详细笔记 (权限守卫完整实现)
+- API接口封装详细笔记 (API 封装完整方案)

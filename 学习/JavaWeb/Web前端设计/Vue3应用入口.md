@@ -1,9 +1,14 @@
 ---
 type: 学习笔记
-title: Vue3应用入口详细笔记
+title: Vue3应用入口
 created: 2026-07-28
 updated: 2026-07-28
-tags: [Vue3, Vite, 应用入口, main.js, 插件注册]
+tags:
+  - Vue3
+  - Vite
+  - 应用入口
+  - main.js
+  - 插件注册
 subject: JavaWeb
 description: 详细讲解 Vue3 应用的创建过程、插件注册机制、挂载原理以及完整的工作流程。
 ---
