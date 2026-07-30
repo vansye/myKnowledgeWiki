@@ -2,7 +2,7 @@
 type: knowledge
 title: Interceptor 拦截器
 created: 2026-07-24T00:00:00
-updated: 2026-07-24T00:00:00
+updated: 2026-08-30T00:00:00
 tags: [JavaWeb, SpringMVC, 入门]
 source:
 conclusion:
@@ -12,7 +12,7 @@ conclusion:
 
 ### 概念
 
-Interceptor 是 Spring MVC 中常见的拦截机制，主要在控制器方法执行前后做统一处理。它比 Filter 更贴近 Spring 框架，适合在进入 Controller 前做登录验证、权限判断，也可以在响应完成后做收尾处理。
+Interceptor 是 Spring MVC 中常见的拦截机制，主要在控制器方法执行前后做统一处理。它比 [[Filter过滤器]] 更贴近 Spring 框架，适合在进入 Controller 前做登录验证、权限判断，也可以在响应完成后做收尾处理。两者都是请求处理链上的拦截组件，常被拿来对比学习。
 
 
 ### 重点

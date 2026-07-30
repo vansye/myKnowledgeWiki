@@ -2,7 +2,7 @@
 type: knowledge
 title: Maven
 created: 2026-07-24T00:00:00
-updated: 2026-07-24T00:00:00
+updated: 2026-08-30T00:00:00
 tags: [JavaWeb, 构建工具, 入门]
 source:
 conclusion:
@@ -12,7 +12,7 @@ conclusion:
 
 ### 概念
 
-Maven 是 Java 项目常用的构建和依赖管理工具，负责下载第三方库、组织项目结构、执行编译和打包。JavaWeb 项目里几乎离不开 Maven，它让项目依赖、构建流程和插件配置都变得统一。
+Maven 是 Java 项目常用的构建和依赖管理工具，负责下载第三方库、组织项目结构、执行编译和打包。JavaWeb 项目里几乎离不开 Maven，它让项目依赖、构建流程和插件配置都变得统一。通过 [[依赖坐标]] 可以精确指定所需库的版本，SpringBoot 等项目也使用 Maven 来管理依赖。
 
 
 ### 重点

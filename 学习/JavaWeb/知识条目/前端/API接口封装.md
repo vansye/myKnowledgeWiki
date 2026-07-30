@@ -2,7 +2,7 @@
 type: knowledge
 title: API 接口封装
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-08-30
 tags: [Axios, 请求拦截器, 响应拦截器, 前端]
 source: Tlias 管理系统前端
 conclusion: 采用 Axios 实例 + 拦截器模式封装 API：请求拦截器自动加 Token，响应拦截器统一处理错误和 401 跳转，业务层按模块拆分（auth/dept/emp 等），最后统一导出。
@@ -11,7 +11,7 @@ conclusion: 采用 Axios 实例 + 拦截器模式封装 API：请求拦截器自
 ## 详细
 
 ### 概念
-`src/api/` 目录封装后端接口请求，采用分层模式：`http.js` 创建 Axios 实例并配置拦截器，各业务模块（auth/dept/emp 等）定义具体接口方法，`index.js` 统一导出。
+`src/api/` 目录封装后端接口请求，采用分层模式：`http.js` 创建 Axios 实例并配置拦截器，各业务模块（auth/dept/emp 等）定义具体接口方法，`index.js` 统一导出。[[Pinia状态管理]] 中的 Store actions 通过这些 API 方法从后端获取数据，更新状态。
 
 ### 重点
 - **请求拦截器**：自动从 localStorage 获取 Token 添加到请求头，所有接口无需手动设置

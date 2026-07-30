@@ -2,7 +2,7 @@
 type: knowledge
 title: RESTful 规范
 created: 2026-07-24T00:00:00
-updated: 2026-07-24T00:00:00
+updated: 2026-08-30T00:00:00
 tags: [JavaWeb, 规范, 入门]
 source:
 conclusion:
@@ -12,7 +12,7 @@ conclusion:
 
 ### 概念
 
-RESTful 规范是一种设计 Web 接口的风格，强调用 URL 表示资源，用 HTTP 方法表示操作。初学 JavaWeb 时，它经常出现在接口设计、接口命名和前后端联调中。
+RESTful 规范是一种设计 Web 接口的风格，强调用 URL 表示资源，用 [[HTTP请求]] 方法（GET、POST、PUT、DELETE）表示操作。初学 JavaWeb 时，它经常出现在接口设计、接口命名和前后端联调中。[[Servlet]] 或框架的 Controller 层通常遵循 RESTful 风格设计接口。
 
 
 ### 重点

@@ -2,7 +2,7 @@
 type: knowledge
 title: MyBatis
 created: 2026-07-24T00:00:00
-updated: 2026-07-24T00:00:00
+updated: 2026-08-30T00:00:00
 tags: [JavaWeb, 数据库, 入门]
 source:
 conclusion:
@@ -12,7 +12,7 @@ conclusion:
 
 ### 概念
 
-MyBatis 是 Java 中常用的持久层框架，用来简化 SQL 与 Java 对象之间的映射。开发者可以更直接地写 SQL，并把查询结果映射成对象。它在 JavaWeb 项目里常和 Spring 一起使用。
+MyBatis 是 Java 中常用的持久层框架，用来简化 SQL 与 Java 对象之间的映射。开发者可以更直接地写 SQL，并把查询结果映射成对象。它在 JavaWeb 项目里常和 [[IoC和DI]] 一起使用，配合 [[Servlet]] / SpringMVC 的 Controller 层完成数据访问。
 
 
 ### 重点
