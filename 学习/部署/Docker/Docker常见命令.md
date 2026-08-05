@@ -6,7 +6,7 @@ updated: 2026-08-04
 tags: [Docker, 容器, 命令, 部署, DevOps]
 subject: 部署/Docker
 ---
-![[Pasted image 20260804211448.png]]
+
 > Docker 命令围绕三个核心对象展开：**镜像（Image）**、**容器（Container）**、**仓库（Registry）**。掌握这三类命令，即可覆盖日常 90% 的使用场景。
 
 ## 目录
